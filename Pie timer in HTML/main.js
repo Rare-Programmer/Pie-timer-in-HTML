@@ -29,9 +29,6 @@ var loader = document.getElementById("loader"),
     y = Math.cos(r) * -125,
     mid = α > 180 ? 1 : 0,
     anim = "M 0 0 v -125 A 125 125 1 " + mid + " 1 " + x + " " + y + " z";
-  //[x,y].forEach(function( d ){
-  //  d = Math.round( d * 1e3 ) / 1e3;
-  //});
 
   loader.setAttribute("d", anim);
   border.setAttribute("d", anim);
